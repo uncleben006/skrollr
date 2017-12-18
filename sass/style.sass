@@ -1,0 +1,142 @@
+$color_orange: #ff6e3a
+
+
+body
+  overflow-x: hidden
+
+*
+  font-family: 微軟正黑體
+  transition: 0.5s
+  // border: 1px solid #666  
+  // debug
+  // header
+  //   display: none
+  // section
+  //   display: none
+  // section#section_ask
+  //   display: none
+  section#section_about
+    display: block
+  
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+  
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  background-color: transparent
+  a
+    color: white
+    &:hover
+      color: $color_orange  
+  
+header.jumbotron
+  text-align: center
+  background-image: url(https://img.91ddcc.com/14202628396409.jpg)
+  background-size: cover
+  background-attachment: fixed
+  margin: 0px
+  .container
+    color: white
+    padding: 200px 0px
+  hr
+    max-width: 50px
+    border: 2px solid $color_orange
+    background-color: $color_orange
+  h4
+    color: rgba(white,0.5)
+    font-weight: normal
+
+section
+  padding: 50px 0px
+    
+section#section_ask
+  background-color: $color_orange
+  position: relative
+  .col-sm-7
+    h2
+      margin-top: 130px
+  .icon
+    position: absolute
+    left: 50%
+    top: 30% 
+    font-size: 150px
+    animation: down 1.5s infinite
+    @keyframes down
+      0%
+        opacity: 1
+        transform: translate(-50%,-50%) 
+      100%
+        opacity: 0
+        transform: translate(-50%,-30%)
+  .col-sm-5.img
+    background-image: url(https://www.booklife.com.tw/upload_files/booklife/website/g0200021%20-c2.jpg)
+    height: 350px
+    mix-blend-mode: multiply   
+    h2
+      margin: 0
+      
+section#section_about
+  .img1
+    background-image: url(https://img.epochtimes.com.tw/upload/images/2014/02/14/80531_medium.jpg)
+    background-size: cover   
+  .img2
+    background-image: url(http://blog.terewong.com/wp-content/uploads/2012/12/121210IMG_2394.jpg)
+    background-size: cover
+  .img3
+    background-image: url(https://i1.kknews.cc/large/2095/7736648294)
+    background-size: cover  
+  .img_wrap
+    height: 200px
+    overflow: hidden
+  @media screen and (max-width: 950px)
+    .img3
+      margin-top: 20px
+    
+section#section_story
+  background-color: #222
+  color: white
+  padding: 0px
+  .col-sm-5
+    background-image: url(https://stutzfamily.com/mrstutz/Maps/USHistory/europe1938.gif)
+    background-size: cover
+    height: 400px
+  .col-sm-7
+    text-align: center
+    i
+      font-size: 40px
+    .row.features
+      margin: 40px 0px 
+      
+section#section_future
+  .col-sm-6
+    height: 100%
+    float: right
+  .feature
+    padding-top: 10px 
+    padding-bottom: 10px
+  img
+    width: 100%
+    
+  i
+    font-size: 30px
+
+footer.jumbotron
+  text-align: center
+  background-image: url(https://img.91ddcc.com/14202628396409.jpg)
+  background-size: cover
+  background-attachment: fixed
+  padding: 0px
+  margin-bottom: 0px
+  input
+    background-color: transparent
+    max-width: 300px
+    text-align: center
+    margin: 0 auto
+  hr
+    max-width: 50px
+    border: 2px solid $color_orange
+  .container
+    color: white
+    padding: 200px 0px
+    
+    
+    
